@@ -1,0 +1,94 @@
+.product-detail{
+     margin-top: 80px;
+
+     .product-layout{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+         
+
+          .product-img{
+               max-width: 800px;
+               min-width: 600px;
+               height: 600px;
+               // display: flex;
+
+               img{
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(0.9);
+                    object-fit: contain;
+               }
+
+          }
+
+          .product-info{
+               display: flex;
+               flex-direction: column;
+               margin-top: 50px;
+               gap: 20px;
+
+               .cart-options{
+                    .quantity-selector{
+                         border: 1px solid var(--secondary-text-color);
+                         width: fit-content;
+
+                         .btn{
+                              padding: 8px 16px;
+                              background-color: #eee;
+                              color: var(--primary-text-color);
+                              display: inline-block;
+                              cursor: pointer;
+                              font-size: 1.2rem;
+                              user-select: none;
+
+                              &:hover{
+                                   background-color: #ddd;
+                              }
+                              &:active{
+                                   background-color: #eee;
+                              }
+
+                         }
+                         .quantity{
+                              text-align: center;
+                              width: 60px;
+                              display: inline-block;
+                              font-weight: 700;
+                         }
+                    }
+
+                    .add-to-cart{
+                         margin-top: 30px;
+                         max-width: 200px;
+                         text-align: center;
+
+                    }
+               }
+               .return-polocy{
+
+                    border-top: 1px dashed #ccc;
+                    color: var(--secondary-text-color);
+                    font-size: 0.8rem;
+                    margin-top: 20px;
+                    padding-top: 10px;
+
+                    ul{
+                         list-style: circle;
+                         li{
+                              margin-top: 8px;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .product-detail{
+          margin-top: 8px;
+          .product-layout{
+               flex-direction: column;
+          }
+     }
+}

@@ -1,0 +1,21 @@
+.spinner {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     border: 9px solid;
+     display: inline-block;
+     transform: translateX(50%);
+     position: absolute;
+     left: 50%;
+     top: 100px;
+
+     border-color: #7c7c7c;
+     border-right-color: #474bff;
+     animation: spinner-d3wgkg 1s infinite linear;
+  }
+  
+  @keyframes spinner-d3wgkg {
+     to {
+        transform: rotate(1turn);
+     }
+  }
